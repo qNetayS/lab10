@@ -101,6 +101,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 ```
 ### 8.Проверка портов и статуса
 vagrant port
+Вывод:
 ```
 The forwarded ports for the machine are listed below. Please note that
 these values may differ from values configured in the Vagrantfile if the
@@ -112,6 +113,8 @@ provider supports automatic port collision detection and resolution.
 ```
 vagrant ssh
 ```
+Результат:
+```
 Linux debian 6.1.0-25-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.106-3 (2024-08-26) x86_64
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -122,18 +125,25 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Fri May 31 20:00:00 2026 from 10.0.2.2
 vagrant@debian:~$
+```
 ### 10.Работа со снапшотами
 ```
 vagrant snapshot list
 vagrant snapshot push
 ```
 Вывод:
+```
+
 ==> default: Snapshotting the machine as 'push_1234567890_123'...
 ==> default: Snapshot saved! You can restore the snapshot at any time by
 ==> default: using `vagrant snapshot restore`. You can delete it using
 ==> default: `vagrant snapshot delete`.
 ```
+
+```
 vagrant snapshot pop
+```
+Вывод:
 ```
 ==> default: Restoring the snapshot 'push_1234567890_123'...
 ==> default: Deleting the snapshot 'push_1234567890_123'...
@@ -142,7 +152,7 @@ vagrant snapshot pop
 ==> default: Booting VM...
 ==> default: Waiting for machine to boot. This may take a few minutes...
 ==> default: Machine booted and ready!
-
+```
 
 
 
