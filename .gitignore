@@ -1,0 +1,6 @@
+.vagrant/
+*.box
+*.log
+shared/*
+.DS_Store
+Thumbs.db
